@@ -40,3 +40,31 @@
 .read-the-docs {
   color: #888;
 }
+.chart-container {
+  position: relative;
+  width: 90vw;
+  height: 80vh;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+}
+.chart-header {
+  height: 32px;
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+.message-input-container {
+  width: 90vw;
+  position: absolute;
+  bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+.message-textarea {
+  flex:1;
+  /* width: 80%; */
+}
+.message-btn {
+  margin-left: 16px;
+  width: 80px;
+}

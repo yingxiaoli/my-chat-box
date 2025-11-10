@@ -9,6 +9,10 @@
 		"test": "vitest",
 		"cf-typegen": "wrangler types"
 	},
+    "dependencies": {
+        "graphql": "^16.8.1",
+        "graphql-yoga": "^5.0.0"
+    },
 	"devDependencies": {
 		"@cloudflare/vitest-pool-workers": "^0.8.19",
 		"typescript": "^5.5.2",
