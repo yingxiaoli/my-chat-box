@@ -1,10 +1,29 @@
-export interface Message{
-    id:string;
-    content:string;
-    role:'user'|'ai';
-    timestamp:string;
+export interface Message {
+  id: string;
+  role: "user" | "assistant" | "system";
+  content: string;
+  timestamp: number;
+  isStreaming?: boolean;
 }
 
-export interface SendMessageResponse {
-    sendMessage: Message;
-  }
+export interface Conversation {
+  id: string;
+  title: string;
+  messages: Message[];
+  createdAt: number;
+  updatedAt: number;
+}
+
+export interface ChatState {
+  conversations: Conversation[];
+  currentConversationId: string | null;
+  isLoading: boolean;
+  error: string | null;
+}
+
+export interface StreamResponse {
+  content: string;
+  done: boolean;
+}
+
+export type Theme = "light" | "dark";

@@ -4,7 +4,9 @@
   padding: 2rem;
   text-align: center;
 }
-
+html{
+  overflow: hidden;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -42,8 +44,8 @@
 }
 .chart-container {
   position: relative;
-  width: 90vw;
-  height: 80vh;
+  width: calc(90vw - 4rem);
+  height: calc(100vh - 6rem);
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 16px;
@@ -51,20 +53,57 @@
 .chart-header {
   height: 32px;
   display: flex;
+  justify-content: space-between;
   border-bottom: 1px solid #ddd;
 }
+.chat-title{
+  font-weight: bolder;
+}
+.clear-btn{
+  font-size: 12px;
+}
 .message-input-container {
-  width: 90vw;
-  position: absolute;
-  bottom: 32px;
+  width: 100%;
+  margin-top: 1.5rem;
   display: flex;
   justify-content: space-between;
 }
 .message-textarea {
-  flex:1;
-  /* width: 80%; */
+  flex: 1;
 }
 .message-btn {
   margin-left: 16px;
   width: 80px;
+}
+
+.message-list {
+  height: calc(100% - 100px);
+  overflow: auto;
+}
+
+.user-msg {
+  flex-direction: row-reverse;
+}
+
+.msg-container {
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+}
+.msg-txt {
+  text-align: left;
+  max-width: 50%;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+}
+.ai-msg .msg-txt {
+  background-color: rgba(81, 188, 202, 0.606);
+}
+.start-conversation{
+  width: 100%;
+  height: calc(100% - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
