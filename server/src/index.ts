@@ -96,8 +96,8 @@ const yoga = createYoga({
 			'http://localhost:5174', // Vite HMR 备用端口
 			'http://localhost:5175', // 额外本地端口
 			'http://localhost:3000', // 备用本地端口
-			'https://chatbotfrontend-dhd.pages.dev',
-			'https://chat.qincai.digital',
+			'https://my-chat-box.pages.dev/',
+			'https://liyingtest.online',
 		],
 		credentials: true,
 		allowedHeaders: ['Content-Type', 'Authorization'],
