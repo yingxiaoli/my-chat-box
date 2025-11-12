@@ -44,8 +44,6 @@ const schema = createSchema({
 					if (!messages || !Array.isArray(messages)) {
 						throw new Error('Invalid request: messages array is required');
 					}
-					console.log('sendMessage messages');
-					return { content: '我听不懂呢' };
 					// 调用 OpenAI API (非流式)
 					const response = await fetch('https://api.openai.com/v1/chat/completions', {
 						method: 'POST',
